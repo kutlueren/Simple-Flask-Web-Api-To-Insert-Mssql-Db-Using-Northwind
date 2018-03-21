@@ -11,8 +11,6 @@ dbBusiness = DbBusiness("Driver={SQL Server Native Client 11.0};"
                         "Database=yourdbname;"
                         "uid=yourusername;pwd=yourpassword")
 
-@app.route('/')
-
 @app.route('/AddCategory',  methods=['POST'])
 def AddCategory():
 
