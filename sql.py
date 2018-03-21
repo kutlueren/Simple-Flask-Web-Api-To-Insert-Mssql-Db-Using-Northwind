@@ -18,8 +18,6 @@ def AddCategory():
 
     id=dbBusiness.addCategory()
 
-    '''request.json['title'],'''
-
     result = {
          'Id': id,
     }
@@ -30,8 +28,6 @@ def AddCategory():
 def AddRegion():
 
     id = dbBusiness.addRegion()
-
-    '''request.json['title'],'''
 
     result = {
          'Id': id,
@@ -44,8 +40,6 @@ def AddSupplier():
 
     id = dbBusiness.addSupplier()
 
-    '''request.json['title'],'''
-
     result = {
          'Id': id,
     }
@@ -56,8 +50,6 @@ def AddSupplier():
 def AddTerritory():
 
     id = dbBusiness.addTerritory(int(request.json['RegionId']))
-
-    '''request.json['title'],'''
 
     result = {
          'Id': id,
@@ -70,8 +62,6 @@ def AddEmployee():
 
     id = dbBusiness.addEmployee()
 
-    '''request.json['title'],'''
-
     result = {
          'Id': id,
     }
@@ -83,8 +73,6 @@ def AddOrder():
 
     id = dbBusiness.addOrder()
 
-    '''request.json['title'],'''
-
     result = {
          'Id': id,
     }
@@ -95,8 +83,6 @@ def AddOrder():
 def AddCustomer():
 
     id = dbBusiness.addCustomer(str(request.json['CustomerId']))
-
-    '''request.json['title'],'''
 
     result = {
          'Id': id,
